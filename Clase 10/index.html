@@ -6,10 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clase10 - Flexbox</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <style>
+        .menu-container {
+            background-color: beige;
+            display: flex;
+            /**/
+            justify-content: space-between;
+            align-items: center;
+            height: 50px;
+            padding: 10px;
+        }
+
+        .menu-container {
+            list-style-type: none;
+        }
+
+        .menu-container ul li {
+            display: inline-block;
+            padding: 5px;
+            
+        }
+
+        /* codigo para hacerlo sin flex box, o sea es con botones
+        .menu-container ul a {
+            text-decoration: none;
+            height: 40px;
+            width: 70px;
+            display: inline-block;
+            background-color: rgb(39, 10, 204);
+            border-radius: 15px;
+            color: white ;
+            font-size: 1.2em;
+        }*/
+
+        .menu-container a {
+            text-decoration: none;
+        }
+
+        .menu-container ul a {
+            
+            width: 70px;
+            display: inline-block;
+            text-decoration: none;
+        }
+
+        .menuItem {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header nav {
+            position: sticky;
+            top: 0;
+        }
+
+        header img {
+            width: 100%;
+            height: 650px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <nav class="menu-container">
+            <a href="#">Home</a>
+            <ul>
+                <li>
+                    <span class="menuItem">
+                        <a href="#">Link 1</a>
+                    </span>
+                </li> 
+                <li>
+                    <span class="menuItem">
+                        <a href="#">Link 2</a>
+                    </span>
+                </li>
+            </ul>
+        </nav>
+        <img src="./assets/img/1019-5472x3648.jpg" alt="">
+    </header>
     <main>
         <!--
+        <aside>
+            <ul>
+                <li>
+                    <a href="">Link1</a>
+                </li>
+                <li>
+                    <a href="">Link2</a>
+                </li>
+                <li>
+                    <a href="">Link3</a>
+                </li>
+            </ul>
+            <div>
+                <h2>Informacion</h2>
+            </div>
+        </aside>
+    -->
+    <!--
         <section>
             <div class="container">
                 <div>1</div>
